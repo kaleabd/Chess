@@ -1,0 +1,46 @@
+:root{
+    --squareSize: 80px;
+    --defaultBlack: rgb(118, 150, 86);
+    --defaultWhite: rgb(238,238,210);
+    --blackClick: rgb(186,202,43);
+    --whiteClick: rgb(246,246,105);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #262421;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    align-content: space-around;
+}
+.board-container{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(8, var(--squareSize));
+}
+.board-container div{
+    width: var(--squareSize);
+    height: var(--squareSize);
+}
+.black img,
+.white img{
+    width: 100%;
+    height: auto;
+}
+
+.black{   
+    background-color: var(--defaultBlack);
+}
+.white{
+    background-color: var(--defaultWhite);
+}
+.box-clicked{
+    background-color: var(--blackClick);
+}
