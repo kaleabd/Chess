@@ -1,5 +1,5 @@
 :root{
-    --squareSize: 80px;
+    --squareSize: 50px;
     --defaultBlack: rgb(118, 150, 86);
     --defaultWhite: rgb(238,238,210);
     --blackClick: rgb(186,202,43);
@@ -30,7 +30,8 @@ body{
     height: var(--squareSize);
 }
 .black img,
-.white img{
+.white img,
+.black-white-container img{
     width: 100%;
     height: auto;
 }
@@ -43,4 +44,28 @@ body{
 }
 .box-clicked{
     background-color: var(--blackClick);
+}
+
+.black-button{
+    width: 100px;
+    height: 100px;
+    background-color: #3c3935;
+    border: 0.2rem solid #3c3935;
+    border-radius: 0.5rem;
+}
+.white-button{
+    width: 100px;
+    height: 100px;
+    background-color: #e6e6e6;
+    border: 0.2rem solid #e6e6e6;
+    border-radius: 0.5rem;
+}
+.clicked{
+    border: 0.2rem solid #7fa650;
+}
+.black-white-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 25%;
 }
