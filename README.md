@@ -1,1 +1,1 @@
-# Chess
+# Grandmaster Chess
